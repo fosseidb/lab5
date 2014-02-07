@@ -44,3 +44,9 @@ function anagrammedName(name) {
 		return name;
 	}
 }
+
+$("a.nameChange").click(function() {
+	event.preventDefault();
+	//$( this ).slideUp();
+	$(this).html("<h4>"+ anagrammedName($(this).text())+"</h4>");
+})
